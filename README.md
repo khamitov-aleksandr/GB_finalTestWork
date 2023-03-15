@@ -14,9 +14,9 @@ Write a program that from the existing array of strings forms an array of string
 ![diagram](diagram.png)
 
 ### Program:
-To run the program, go to the `solution` folder and run the command through the terminal:
+To run the program, clone the file (or folder) folder and run the command through the terminal:
 ```
-dot net run
+dotnet run
 ```
 Next, enter the values separated by spaces, for example:
 ```
