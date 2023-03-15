@@ -11,7 +11,7 @@ Write a program that from the existing array of strings forms an array of string
 5. Return a new filled array as a result
 
 ### Block diagram of the algorithm:
-![Diagram](/diagram/Diagram.drawio.png)
+![diagram](diagram.png)
 
 ### Program:
 To run the program, go to the `solution` folder and run the command through the terminal:
