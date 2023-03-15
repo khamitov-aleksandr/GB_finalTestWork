@@ -1,4 +1,4 @@
-# Final verification work.
+# Final verification work
 
 ## Task:
 Write a program that from the existing array of strings forms an array of strings whose length is less than or equal to 3 characters. The initial array can be entered from the keyboard, or set at the start of the algorithm execution. When solving, it is not recommended to use collections, it is better to get by with arrays only.
@@ -16,6 +16,8 @@ Write a program that from the existing array of strings forms an array of string
 ### Program:
 To run the program, clone the file (or folder) folder and run the command through the terminal:
 ```
+dotnet new console
+
 dotnet run
 ```
 Next, enter the values separated by spaces, for example:
