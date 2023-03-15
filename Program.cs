@@ -1,11 +1,13 @@
-﻿Console.Clear();
+﻿// Programm that take from the existing array of strings forms an array of strings
+// whose length is less or equal to 3 characters.
+Console.Clear();
 
-string[] array = AskArray();
-string[] result = FindLessThan(array, 3);
+string[] array = FillArray();
+string[] result = FindLessThanThree(array, 3);
 Console.WriteLine($"[{string.Join(", ", array)}] -> [{string.Join(", ", result)}]");
 
-string[] FindLessThan(string[] input, int n) {
-    string[] output = new string[CountLessThan(input, n)];
+string[] FindLessThanThree(string[] input, int n) {
+    string[] output = new string[CountLessThanThree(input, n)];
 
     for(int i = 0, j = 0; i < input.Length; i++) {
         if(input[i].Length <= n) {
@@ -17,7 +19,7 @@ string[] FindLessThan(string[] input, int n) {
     return output;
 }
 
-int CountLessThan(string[] input, int n) {
+int CountLessThanThree(string[] input, int n) {
     int count = 0;
 
     for(int i = 0; i < input.Length; i++) {
@@ -25,11 +27,10 @@ int CountLessThan(string[] input, int n) {
             count++;
         }
     }
-
     return count;
 }
 
-string[] AskArray() {
-    Console.Write("Введите значения через пробел: ");
+string[] FillArray() {
+    Console.Write("Enter values separated by spaces: ");
     return (Console.ReadLine()!).Split(" ");
 }
